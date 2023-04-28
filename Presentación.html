@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+
+     <meta charset="UTF-8">
+
+        <title> Mis proyectos</title>
+
+        <h2> MIS PROYECTOS</h2>
+
+        <style type="text/css">
+
+#advert{
+    left: 50px;
+}
+
+#mensaje{
+    border-bottom: #b32b2d;
+    border-bottom-style: groove;
+}
+
+#band{
+    
+    margin: 2%;
+    margin-bottom: -10px;
+    border-radius: 5%;
+    width: 50%;
+    
+}
+
+
+
+#banderas{
+    margin-left: 10%;
+    width: 90%;
+
+    
+}
+
+
+table{
+    border: 0px;
+    margin-left: 3%;
+}
+
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+  z-index: 300;
+  width: 100%;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+  
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  overflow: auto;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 500px;
+  background-color: #374282 ;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  
+  .modal__inner {
+    width: 95%;
+    height: 75%;
+    box-sizing: border-box;
+  }
+}
+
+#botoon{
+    background:#385899 ;
+    border: 2px;
+    border-color: #ccc;
+    border-style: groove;
+    padding: 2%;
+    width: 45%;
+    top: 2%;
+    display: inline-block;
+}
+
+
+
+p {
+  max-width: 600px;
+  height: auto;
+  width: auto;
+  font-size: 1.3em;
+}
+
+#banderas, td{
+    border: none;
+    
+}
+
+
+#prohibido{
+    margin-left: 1%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    width: 90%;
+   
+}
+
+ th{
+
+    border: 2px solid ;
+    border-color: #b32b2d; 
+    height: 50px;
+    width: 20%;
+    font-size: 125%;
+    font-family: cooper black;
+    color: #385899;
+    border-radius: 5%;
+}
+
+tr{
+
+width: 20%;
+}
+
+#arts{
+    color: #385899;
+    font-family: cooper black;
+}
+
+#modal__inner1 {
+  transition: top .25s ease;
+  position: absolute;
+  top: -10%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  margin: auto;
+  overflow: none;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 500px;
+  padding-top: 40px;
+}
+
+
+
+.centered-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+
+
+#band {
+  display: inline;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+  transition: all 500ms ease;
+  margin-bottom: 40px;
+  z-index: 0;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+
+#band::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  
+  transition: all 500ms ease;
+  z-index: -1;
+}
+
+
+#band:hover {
+  background-color: #374282;
+  box-shadow: 0 0 5px #374282, 0 0 10px #374282, 0 0 10px #385899;
+  
+}
+
+
+
+
+
+#catec{
+margin-top: -100px;
+color: white;
+z-index: 1000;
+right: 0px;
+margin-left: 65%;
+}
+
+
+
+        </style>
+
+</HEAD>
+
+       <BODY>
+
+        <h3>Esta es una página creada especialmente para que puedan ver mis proyectos de programadora. <br>
+        Demuestra lo que he aprendido a lo largo de mi tiempo... Será actualizada cada vez que aprenda un lenguaje nuevo o una tarea nueva. </h3>
+
+        <table id="banderas">
+
+            <tr>
+                <td> <label class="btn" for="modal-10"> <a href="https://karnimari.github.io/devinaweb.io/" target="_blank"> <img id="band" src="Diseño perfecto1 con sombra.png"> </a><p><a href="https://karnimari.github.io/devinaweb.io/">Devina web</a> </p>  </label>
+                    <input class="modal-state" id="modal-10" type="checkbox" />
+                    <div class="modal">
+                      <label class="modal__bg" for="modal-10"></label>
+                      <div class="modal__inner" id="modal__inner1">
+                        <label class="modal__close" for="modal-10"></label>
+                        <img src="cond ecua.png" alt="" id="noband"/>
+                       
+                    </p>
+                      </div>
+                    </div>
+                
+                </td>
+                <td> <label class="btn" for="modal-10"> <a href="https://karnimari.github.io/fcl.github.io/" target="_blank"> <img id="band" src="Sin LETRAS y dib.png"> </a><p><a href="https://karnimari.github.io/fcl.github.io/"> Paquetería FCL </a></p> </label>
+                    <input class="modal-state" id="modal-11" type="checkbox" />
+                    <div class="modal">
+                      <label class="modal__bg" for="modal-11"></label>
+                      <div class="modal__inner" id="modal__inner1">
+                        <label class="modal__close" for="modal-11"></label>
+                        <img src="cond colomb.png" alt="" id="noband"/>
+                      </div>
+                    </div>
+                   </td>
+
+                   </tr>
+        </table>
+                   <br>
+                   <br>
+                         <p>
+Los formularios están desactivados debido a que las páginas son solo muestras de experiencia, no son empresas reales.
+
+                           </p>
+
+       </BODY> 
+
+
+   
+</HTML>
